@@ -21,7 +21,9 @@ public class GuessTheNumber {
         while(true) {
             System.out.println(random);
             if (input == random) {
-                System.out.print("Good job, " + firstName + "! You guessed my number in 3 guesses");
+                System.out.print("Good job, " + firstName + "! You guessed my number in 3 guesses\n");
+                System.out.println("Would you like to play again? (y or n)");
+                fetch.next();
                 break;
             } else if (input < random) {
                 System.out.println(wrongLow);
