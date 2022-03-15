@@ -9,9 +9,19 @@ class GuessTheNumberTest {
         guessTheNumber = new GuessTheNumber();
     }
 
+    @Test
+    void firstName() {
+        assertEquals("Marc", "Marc");
+    }
+
+    @Test
+    void input() {
+        assertEquals(4,4);
+    }
+
     @AfterEach
     void tearDown() {
-        
+
     }
 
 }
